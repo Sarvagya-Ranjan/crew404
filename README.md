@@ -1,6 +1,6 @@
-# SEEKR: The Ultimate Lost & Found Solution for VITians
+# Seekr: The Ultimate Lost & Found Solution for VITians
 
-Losing items on campus can be frustrating, but retrieving them doesn’t have to be! **SEEKR** is a user-friendly app developed exclusively for Vellore Institute of Technology (VIT) students, designed to streamline the process of finding lost belongings.
+Losing items on campus can be frustrating, but retrieving them doesn’t have to be! **Seekr** is a user-friendly app developed exclusively for Vellore Institute of Technology (VIT) students, designed to streamline the process of finding lost belongings.
 
 ## Features
 
