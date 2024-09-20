@@ -427,11 +427,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8140646462262415611, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+--- !u!224 &241088619 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3514267961968519141, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+  m_PrefabInstance: {fileID: 241088618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &320340252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,8 +1505,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1766086101}
-  - {fileID: 2130577648}
+  - {fileID: 241088619}
+  - {fileID: 8482656859889237883}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1805,11 +1814,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622695037}
   m_CullTransparentMesh: 1
---- !u!224 &1766086101 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8448517350775871926, guid: d173a20b55c164d768177039b7171002, type: 3}
-  m_PrefabInstance: {fileID: 8482656859889237882}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2046156934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,11 +1940,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2046156934}
   m_CullTransparentMesh: 1
---- !u!224 &2130577648 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6864252969671071465, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
-  m_PrefabInstance: {fileID: 241088618}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8482656859889237882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1960,6 +1959,10 @@ PrefabInstance:
     - target: {fileID: 5934192877627945338, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6594326607918665850, guid: d173a20b55c164d768177039b7171002, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8448517350775871926, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_Pivot.x
@@ -2046,6 +2049,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d173a20b55c164d768177039b7171002, type: 3}
+--- !u!224 &8482656859889237883 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 917962800504716614, guid: d173a20b55c164d768177039b7171002, type: 3}
+  m_PrefabInstance: {fileID: 8482656859889237882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
