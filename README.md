@@ -32,5 +32,5 @@ Losing items on campus can be frustrating, but retrieving them doesn’t have to
    - Leverage targeted keywords to refine your search and discover more accurate matches, ensuring a seamless and efficient experience tailored to your specific needs.
 
 5. **Contact the Finder**:
-   - When you find a match, reach out to the finder via our direct in-app texts, mail, or any commincation mode.
+   - Reach out to the finder via our direct in-app texts, mail, or any commincation mode When you find your misplaced item.
   
