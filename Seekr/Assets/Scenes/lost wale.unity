@@ -170,11 +170,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ReferenceResolution: {x: 400, y: 800}
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -1591,6 +1591,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lost wale
       objectReference: {fileID: 0}
+    - target: {fileID: 3786244364095451508, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
+      propertyPath: m_text
+      value: When did you find it?
+      objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1601,19 +1605,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1653,11 +1657,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 549.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 83.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5048607267028764840, guid: 3366dbe469d0b4c038aae9171dcea339, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

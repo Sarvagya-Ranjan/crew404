@@ -339,6 +339,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1115548044}
     m_Modifications:
+    - target: {fileID: 3514267961968519141, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514267961968519141, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514267961968519141, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514267961968519141, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514267961968519141, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514267961968519141, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6864252969671071465, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -429,7 +453,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8140646462262415611, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1459,10 +1483,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 400, y: 800}
   m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1962,7 +1986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6594326607918665850, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8448517350775871926, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_Pivot.x
