@@ -122,6 +122,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1505530397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1505530399}
+  - component: {fileID: 1505530398}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1505530398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505530397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc49db527c72e1f4fa13e9224ee62770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1505530399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505530397}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 288.1806, y: 321.02078, z: 18.68132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546956741
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +503,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3652674542235149319, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 63.012367
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3652674542235149319, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -477,6 +521,70 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1505530398}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadScenes, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: found wale
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1505530398}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoadScenes, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: lost wale
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137262956169211464, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4177379589636312438, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
       propertyPath: m_Name
       value: homepage
@@ -493,3 +601,4 @@ SceneRoots:
   - {fileID: 2020708124}
   - {fileID: 1546956745}
   - {fileID: 1887824266}
+  - {fileID: 1505530399}
