@@ -14,10 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/homepage.unity
     guid: 581dea957ddd42c45be1afe0ff36ac5d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/found wale 2.unity
     guid: 495364c61d2994cd785bd198b83356ef
   - enabled: 1
     path: Assets/Scenes/lost wale.unity
     guid: cc8eb612e3366472584a000b7d27f197
+  - enabled: 1
+    path: Assets/Scenes/found wale.unity
+    guid: 340feec0745ad044dbf556d6f353e8f1
   m_configObjects: {}

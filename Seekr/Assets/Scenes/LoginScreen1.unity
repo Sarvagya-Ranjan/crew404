@@ -242,6 +242,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7738045371517329285, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738045371517329285, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738045371517329285, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 556323889}
+    - target: {fileID: 7738045371517329285, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738045371517329285, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RegisterPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738045371517329285, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ChangePanell, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738045371517329285, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8140646462262415611, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -358,6 +386,9 @@ GameObject:
   m_Component:
   - component: {fileID: 556323885}
   - component: {fileID: 556323886}
+  - component: {fileID: 556323888}
+  - component: {fileID: 556323887}
+  - component: {fileID: 556323889}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -394,6 +425,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logTxt: {fileID: 0}
   facebookToken: ....
+--- !u!114 &556323887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556323883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02cc38e345745b140ba20c332eec498e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regPanel: {fileID: 1821675583}
+  loginPanel: {fileID: 1015190188}
+--- !u!114 &556323888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556323883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc49db527c72e1f4fa13e9224ee62770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &556323889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556323883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27dfe827c8a90174aba1693e79ced4a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regPanel: {fileID: 1821675583}
+  loginPanel: {fileID: 1015190188}
+--- !u!1 &1015190188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6594326607918665850, guid: d173a20b55c164d768177039b7171002, type: 3}
+  m_PrefabInstance: {fileID: 8482656859889237882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1115548040
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,6 +641,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1821675583 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8140646462262415611, guid: a16ed84bdcf8e45029358a0946a5580c, type: 3}
+  m_PrefabInstance: {fileID: 241088618}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8482656859889237882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -615,27 +696,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5275740909053245450, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5275740909053245450, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5275740909053245450, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 556323887}
     - target: {fileID: 5275740909053245450, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5275740909053245450, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SceneLoader
+      value: RegisterPanel
       objectReference: {fileID: 0}
     - target: {fileID: 5275740909053245450, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LoadScenes, Assembly-CSharp
+      value: ChangePanel, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5275740909053245450, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
