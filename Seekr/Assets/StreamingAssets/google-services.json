@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "159897709428",
+    "project_id": "seekr-24724",
+    "storage_bucket": "seekr-24724.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159897709428:android:04e9d3920ac33d755e5a21",
+        "android_client_info": {
+          "package_name": "com.crew404.Seekr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyxrkLy-K2PndX_ALd8qlDpj4ZQGKNioA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
