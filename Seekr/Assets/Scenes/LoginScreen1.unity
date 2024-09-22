@@ -2412,6 +2412,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1115548044}
     m_Modifications:
+    - target: {fileID: 559249534152926726, guid: d173a20b55c164d768177039b7171002, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 666441557299064246, guid: d173a20b55c164d768177039b7171002, type: 3}
       propertyPath: m_InputType
       value: 2
