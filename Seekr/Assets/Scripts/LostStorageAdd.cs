@@ -8,7 +8,7 @@ using TMPro;
 using System.IO;
 using SimpleFileBrowser;
 using Unity.Services.Authentication;
-
+using UnityEngine.SceneManagement;
 
 public class LostStorageAdd : MonoBehaviour
 {   public TMP_InputField status;
@@ -17,7 +17,6 @@ public class LostStorageAdd : MonoBehaviour
     public TMP_Dropdown losttime;
     public TMP_Dropdown place;
     public TMP_InputField desc;
-
     public Button uploadImageButton;
     public RawImage imageDisplay; // Image component to display the selected image
     private Texture2D uploadedImage;
@@ -26,17 +25,23 @@ public class LostStorageAdd : MonoBehaviour
     {
         await UnityServices.InitializeAsync();
         
-         // Authenticate the user
-     //   if (!AuthenticationService.Instance.IsSignedIn)
-      //  {
-        //    await SignInAnonymously();
-        //}
-        
+          //Authenticate the user
+        if (!AuthenticationService.Instance.IsSignedIn)
+        {
+            await SignInAnonymously();
+        }
+        Debug.Log("hello");
+        Scene activeScene = SceneManager.GetActiveScene();
+        if(activeScene.name == "itemlist")
+        {
+            Debug.Log("hello");
+            RetrieveAllKeys();
+        } 
         if (uploadImageButton)
         {
         uploadImageButton.onClick.AddListener(OpenImagePicker);
         }
-        //RetrieveAllKeys();
+        
     }
 
     async void CreateNewUser()
@@ -150,6 +155,51 @@ public class LostStorageAdd : MonoBehaviour
 
             if (serverData.ContainsKey(key))
             {
+                
+                // Deserialize the JSON string into a LostItemData object
+            LostItemData itemData = JsonUtility.FromJson<LostItemData>(serverData[key]);
+
+            if (itemData.ItemCategory==null) {
+                itemData.ItemCategory = "----";
+            }
+
+            if (itemData.Description==null) {
+                itemData.Description = "----";
+            }
+            itemData.Description = "----";
+            if (itemData.LostTime==null) {
+                itemData.LostTime = "----";
+            }
+
+            if (itemData.Place==null) {
+                itemData.Place = "----";
+            }
+
+            if (itemData.Image==null) {
+                itemData.Image = "----";
+            }
+
+            // Now you can access individual fields
+            Debug.Log("Description: " + itemData.Description);
+            Debug.Log("ItemCategory: " + itemData.ItemCategory);
+            Debug.Log("LostTime: " + itemData.LostTime);
+            Debug.Log("Place: " + itemData.Place);
+            Debug.Log("Image: " + itemData.Image);
+
+            Debug.Log("Calling AddPanel with values:");
+//Debug.Log("Description: " + itemData.Description);
+//Debug.Log("ItemCategory: " + itemData.ItemCategory);
+//Debug.Log("LostTime: " + itemData.LostTime);
+//Debug.Log("Place: " + itemData.Place);
+//Debug.Log("Image: " + itemData.Image);
+
+            // Optionally, call AddPanel with these values
+            //AddPanel(itemData.Description, itemData.ItemCategory, itemData.LostTime, itemData.Place, itemData.Image);
+                
+                
+                
+                //print(serverData[key]);
+                //AddPanel(serverData[key]["Description"], serverData[key]["ItemCategory"], serverData[key]["LostTime"], serverData[key]["Place"], serverData[key]["Image"]);
                 //Debug.Log("Value for " + key + ": " + serverData[key]);
                 
             }
@@ -161,17 +211,65 @@ public class LostStorageAdd : MonoBehaviour
 
     public void AddPanel(string description, string category, string timing, string place, string imgdata)
     {
+         // Check if any of these parameters are null or empty
+    if (string.IsNullOrEmpty(description))
+    {
+        Debug.LogError("Description is null or empty");
+        description = "---";
+    }
+    if (string.IsNullOrEmpty(category))
+    {
+        Debug.LogError("Category is null or empty");
+        category = "---";
+    }
+    if (string.IsNullOrEmpty(timing))
+    {
+        Debug.LogError("Timing is null or empty");
+        timing = "---";
+    }
+    if (string.IsNullOrEmpty(place))
+    {
+        Debug.LogError("Place is null or empty");
+        place = "---";
+    }
+    if (string.IsNullOrEmpty(imgdata))
+    {
+        Debug.LogError("Image data is null or empty");
+        imgdata = "---";
+
+    }
+
         // Create a new panel instance
         GameObject newPanel = Instantiate(panelPrefab, content);
-
+        Transform newPanelTransform = newPanel.transform;
         // Optionally set any properties on the new panel, like text
         //Text panelText = newPanel.GetComponentInChildren<Text>();
-        TMP_Text = GameObject.Find("ChildName");
-        RawImage panelimg = newPanel.GetComponentInChildren<RawImage>();
-        if (panelText != null)
-        {
-            panelText.text = description;
+        TMP_Text whattext = newPanelTransform.Find("whatlostdisplay").GetComponent<TMP_Text>();
+        TMP_Text whentext = newPanelTransform.Find("whenlostdisplay").GetComponent<TMP_Text>();
+        TMP_Text wheretext = newPanelTransform.Find("wherelostdisplay").GetComponent<TMP_Text>();
+        TMP_Text desctext = newPanelTransform.Find("desclostdisplay").GetComponent<TMP_Text>();
+        RawImage panelimg = newPanelTransform.Find("LostImage").GetComponent<RawImage>();
+        
+        if (whattext == null)
+{
+    Debug.LogError("Could not find TMP_Text for 'whatlostdisplay'");
+}
+        if (whattext) {
+        whentext.text = category;
         }
+        if (whentext) {
+        whentext.text = timing;
+        }
+        if (wheretext) {
+        wheretext.text = place;
+        }
+        if (desctext) {
+        desctext.text = description;
+        }
+        
+       
+        LoadImageFromBase64(imgdata, panelimg);
+
 
         // Optionally, adjust the layout
         LayoutRebuilder.ForceRebuildLayoutImmediate(content.GetComponent<RectTransform>());

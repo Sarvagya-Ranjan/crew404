@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/found wale.unity
     guid: 340feec0745ad044dbf556d6f353e8f1
+  - enabled: 1
+    path: Assets/Scenes/itemlist.unity
+    guid: 034ff0763be79dc4dafb8dc3f243379a
   m_configObjects: {}

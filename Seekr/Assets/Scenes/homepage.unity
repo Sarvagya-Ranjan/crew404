@@ -547,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: found wale
+      value: itemlist
       objectReference: {fileID: 0}
     - target: {fileID: 3943751271545807469, guid: 52b74331697ed43a2aa0c61fcccd0491, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
